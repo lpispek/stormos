@@ -56,6 +56,12 @@ COPY scripts/ako-ne-znas-sta-je-bilo.sh /usr/local/bin/ako-ne-znas-sta-je-bilo
 RUN chmod +x /usr/local/bin/ako-ne-znas-sta-je-bilo
 
 # ============================================
+# oj — wall wrapper (broadcast message)
+# ============================================
+COPY scripts/oj.sh /usr/local/bin/oj
+RUN chmod +x /usr/local/bin/oj
+
+# ============================================
 # Custom neofetch config + ASCII art
 # ============================================
 RUN mkdir -p /home/general/.config/neofetch
